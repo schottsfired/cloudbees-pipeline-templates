@@ -1,0 +1,9 @@
+version: 1
+type: pipeline-template
+
+name: Hello World Pipeline Template
+description: Hello World Pipeline Template
+parameters:
+  - name: message
+    type: string
+    displayName: What would you like to say to the world?
