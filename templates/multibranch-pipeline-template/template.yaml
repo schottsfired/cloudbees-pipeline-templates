@@ -1,6 +1,6 @@
 version: 1
 type: pipeline-template
-templateType: multibranch
+templateType: MULTIBRANCH
 
 name: MultiBranch Pipeline Template
 description: MultiBranch Pipeline Template
