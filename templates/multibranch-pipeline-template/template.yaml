@@ -7,10 +7,10 @@ description: MultiBranch Pipeline Template
 parameters:
   - name: repoName
     type: string
-    displayName: Which repo are we building? #try: schottsfired/multibranch-demo
+    displayName: Which repo are we building? #try: multibranch-demo
 multibranch:
   branchSource:
     github:
       repoOwner: schottsfired
       repository: ${repoName}
-      scanCredentialsId: schottsfired-github
+      credentialsId: schottsfired-github
