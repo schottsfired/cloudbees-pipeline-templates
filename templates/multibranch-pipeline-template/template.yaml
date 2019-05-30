@@ -13,4 +13,4 @@ multibranch:
     github:
       repoOwner: schottsfired
       repository: ${repoName}
-      #scanCredentialsId: my-team-github-credentials
+      scanCredentialsId: schottsfired-github
