@@ -1,0 +1,26 @@
+pipeline {
+  agent {
+    kubernetes {
+      label 'mypod'
+      yaml """
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+  - name: golang
+    image: golang:1.5.0
+    command: ['cat']
+    tty: true
+"""
+    }
+  }
+  stages {
+    stage('Build') {
+      steps {
+        container('golang') {
+          sh 'go build -v hello-world.go'
+        }
+      }
+    }
+  }
+}
